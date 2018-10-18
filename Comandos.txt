@@ -72,3 +72,5 @@ git push "nome do remoto" "nome branch" // Retorna o repositorio para o servidor
 git pull "nome do remoto" "nome branch" // Atualiza o seu repositorio com as alteracoes salvas no servidor local (nesse caso fazemos um merge)
 
 fit fetch "nome do remoto" "nome branch" // Pega as alteracoes salvas no servidor local e adiciona a branch especificada (sem fazer merge)
+
+ssh-keygen // Gera a chave ssh
