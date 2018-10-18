@@ -1,0 +1,74 @@
+Comandos git:
+
+git init // Inicializa um repositorio git na localizacao escolhida
+
+git status // Em forma o estatos atual do seu repositorio
+
+git add // Adiciona os arquivos para comecar a contorolar
+
+Exemplos: 
+git add nome.extensao // Adicona o arquivo especifivo
+git add *.extencao // Adiciona todos os aquivos com essa extencao
+git add . // Adiciona todos os arquivos no diretorio
+
+git commit -m "" // Confirma a adicao dos arquivos com uma mensagem
+
+git commit --amend -m "" // Edita o commit mais recente (depois de adicionalo)
+
+git diff // Consulta todas as alteracoes feitas no seus arquivos que nao foram adicionados na staging area
+
+git diff --staged // Consulta todas as alteracoes feitas no seus arquivos que foram adicionados na staging area, mais nao confirmados
+
+git log // Mostra um log de todas as mudancas confirmadas deis do inicio (paginacao, enter para descer e q para sair)
+
+git log -n // Mostra um log de versoes, deis da ultima ate a n versao
+
+git log --pretty=oneline // Mostra o log de commit mais simplificado
+
+gitk // Abre o vizualizador de relatorios do git
+
+git reset HEAD nome.extencao // Remove da staging area
+
+git checkout -- nome.extencao // Reverte um versao de um arquivo
+
+git rm nome.extenao // Remove arquivos
+
+									TAGS // Sao etiquetes, pontos de atalhos para determinado status do sistem (geralmente para determinar diferentes versoes)
+
+git tag // Lista todas as tags do sistema
+
+git tag -a "" -m "" // Criar nova tag
+
+git tag -a "" codcommit -m "" //Cria uma nova tag em um commit especifico
+
+git show nomeTag // Mostra mais informacao de uma determinada tag
+
+git checkout nomeTag // Faz a troca dos arquivos para aquela tag
+
+git checkout master // Volta para a branch master
+
+git tag -d nomeTag // Apaga a tag
+
+									Branches // Sao ramificacoes de um mesmo sistema, sem alterar as outras ramificacoes
+
+git branch nomeBran // Cria uma nova branch como o nome especificado
+
+git checkout nomeBran // Muda para a branch especificada
+
+git merge nomeBran // Mescla a branch atual, com a especificada
+
+git branch -d nomeBran // Deleta a branch especificada
+
+git branch // Lista todas as branchs
+
+git init --bare // Inicializa um repositorio git, permitindo o acesso a outras maquinas da rede local
+
+git clone file:////diretorio do servidor "Nome para a pasta clonada"
+
+git remote // Mostra o nome do servidor remoto em que o repositorio foi clonado
+
+git push "nome do remoto" "nome branch" // Retorna o repositorio para o servidor local
+
+git pull "nome do remoto" "nome branch" // Atualiza o seu repositorio com as alteracoes salvas no servidor local (nesse caso fazemos um merge)
+
+fit fetch "nome do remoto" "nome branch" // Pega as alteracoes salvas no servidor local e adiciona a branch especificada (sem fazer merge)
