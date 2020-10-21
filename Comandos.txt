@@ -33,6 +33,8 @@ git reset nome.arquivo // Remove da staging area
 
 git reset HEAD nome.extencao // Remove da staging area
 
+git restore nome.arquivo // Discarta alteracoes feitas no arquivo
+
 git checkout -- nome.extencao // Reverte um versao de um arquivo
 
 git rm nome.extenao // Remove arquivos
