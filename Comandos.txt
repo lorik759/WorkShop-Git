@@ -13,7 +13,9 @@ git add . // Adiciona todos os arquivos no diretorio
 
 git commit -m "" // Confirma a adicao dos arquivos com uma mensagem
 
-git commit --amend -m "" // Edita o commit mais recente (depois de adicionalo)
+git commit --amend -m "" // Edita o commit mais recente e a mensagem (depois de adicionalo)
+
+git commit --amend --no-edit // Edita o commit mais recente e nao edita a mensagem (depois de adicionalo)
 
 git diff // Consulta todas as alteracoes feitas no seus arquivos que nao foram adicionados na staging area
 
