@@ -29,6 +29,8 @@ git log --pretty=oneline // Mostra o log de commit mais simplificado
 
 gitk // Abre o vizualizador de relatorios do git
 
+git reset nome.arquivo // Remove da staging area
+
 git reset HEAD nome.extencao // Remove da staging area
 
 git checkout -- nome.extencao // Reverte um versao de um arquivo
